@@ -1,0 +1,111 @@
+BASIC:
+  RANDOM_SEED: 42
+  DEVICE:
+    - 0
+    - 1
+    - 2
+    - 3
+  NUM_WORKER: 4
+  IMG_ROOT: Dataset
+  JSON_ROOT: Json_Data
+
+TRAIN:
+  IMG_LOC:
+  - Train_Images
+  - Train_Himg
+  - Train_norm
+  IMG_PROB:
+  - 0.9
+  - 0.05
+  - 0.05
+  LAB_LOC: Train_Labels
+  VAL_LOC: Train_Images
+  JSON_NAME: Fold2
+  SAVE_ROOT: checkpoint
+  WEIGHT_NUM: 12
+
+SELF_TEST:
+  IMG_LOC: Train_Images
+  LAB_LOC: Train_Labels
+
+PUB_TEST:
+  PUB_IMG_LOC: Public_Image
+  PRI_IMG_LOC: Private_Image
+
+AUG:
+  PREPROCESS:
+    MEAN:
+    - 0.485
+    - 0.456
+    - 0.406
+    STD:
+    - 0.229
+    - 0.224
+    - 0.225
+  CROP:
+    PROB_STAS: 0.8
+    RAND_RANGE:
+    - 800
+    - 800
+  RESIZE:
+    SIZE:
+    - 960
+    - 1728
+  PAD:
+    SIZE:
+    - 960
+    - 1728
+  MOSAIC:
+    OUT_SIZE:
+    - 960
+    - 1728
+    PROB: 0.0
+  FLIPLR:
+    PROB: 0.5
+  FLIPUD:
+    PROB: 0.5
+  ROT:
+    PROB: 0.0
+  BRIGHT:
+    FACTOR: 0.1
+    PROB: 0.1
+  NOISE:
+    PROB: 0.1
+    SIGMA: 0.01
+  AUTOAUG:
+    PROB: 0.1
+    OPT: 1
+
+MODEL:
+  ENCODER:
+    NAME: unet
+    DEPTH: 5
+    NAME: efficientnet_b3
+    DROP_RATE: 0.2
+  DECODER:
+    NORM: instance
+    NORM_GROUPS: 4
+    ACTIVATION: mish
+    UPSCALE: interpolation
+    DEEP_SUPERVISION_DEPTH: 3
+
+LOSS:
+  NAME: DFL
+  ACT_KEY: softmax
+  WEIGHT:
+  - 1
+  - 0.25
+  - 0.0625
+
+OPT:
+  SUB_BATCH_SIZE: 8
+  UPDATE_FREQ: 4
+  EPOCHS: 150
+  OPTIMIZER: adamw
+  LEARNING_RATE: 0.001
+  WEIGHT_DECAY: 0.0001
+  WARMUP_EP: 6
+  SCHEDULER: step
+  DECAY_EP: 5
+  GAMMA: 0.75
+  ETA_MIN: 1.0e-07
