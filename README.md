@@ -29,3 +29,13 @@ For convinence, you can follow the folder structure as follows
 ## How to reproduce our result?
 
 ## How to use this code?
+
+## Citation
+```
+@misc{
+    title  = {spread_through_air_spaces_segmentation},
+    author = {Kuok-Tong Ng, Jia-Wei Liao, Yi-Cheng Hung},
+    url    = {},
+    year   = {2022}
+}
+```
