@@ -30,6 +30,21 @@ For convinence, you can follow the folder structure as follows
 
 ## How to use this code?
 
+## Result
+<table>
+  <tr>
+    <td>Public Score</td>
+    <td>Public Rank</td>
+    <td>Private Score</td>
+    <td>Private Rank</td>
+  </tr>
+  <tr>
+    <td>0.920027</td>
+    <td>3</td>
+    <td>0.910871</td>
+    <td>16</td>
+  </tr>
+<table>
 
 ## Citation
 ```
