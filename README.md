@@ -24,6 +24,11 @@ For convinence, you can follow the folder structure as follows
 |   ├─0531_4fold
 |   ├─0601_4fold
 |   └─mix_1
+├─configs                # The config files that we train the model
+|   ├─Fold0.yaml
+|   ├─Fold1.yaml
+|   ├─Fold2.yaml
+|   └─Fold3.yaml
 ├─src
 |   ├─python             # functions and classes written by python
 |   └─matlab             # functions and classes written by matlab
