@@ -10,6 +10,8 @@ The dataset can be downloaded from [here](https://tbrain.trendmicro.com.tw/Compe
 * For **reproduce our submission result only**, you may just download `Private_Image.zip` and `Public_Image.zip`.
 * For **training scheme**, you may need to download `SEG_Train_Dataset.zip` also.
 
+For our training weight files, you may download the weight files **a folder called `checkpoint`** from [here](https://drive.google.com/file/d/1Id2G3Wu3uUeYZV6iBCOrfCYd7475Y51f/view?usp=sharing).
+
 For convinence, you can follow the folder structure as follows
 ```
 .
@@ -18,6 +20,10 @@ For convinence, you can follow the folder structure as follows
 |   ├─Public_Image       # From Private_Image.zip
 |   ├─Train_Annotations  # From SEG_Train_Dataset.zip
 |   └─Train_Images       # From SEG_Train_Dataset.zip
+├─checkpoint             # put training weights here
+|   ├─0531_4fold
+|   ├─0601_4fold
+|   └─mix_1
 ├─src
 |   ├─python             # functions and classes written by python
 |   └─matlab             # functions and classes written by matlab
