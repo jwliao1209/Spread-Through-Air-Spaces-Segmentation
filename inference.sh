@@ -2,6 +2,6 @@
 
 python3 STEP7_Inference.py
 wait
-matlab <  PostProcess.m
+matlab <  STEP8_PostProcess.m
 
 exit
