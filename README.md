@@ -1,4 +1,4 @@
-### Contour_Segmentation_for_Spread_Through_Air_Spaces_in_Lung_Adenocarcinom
+# Contour Segmentation for Spread Through Air Spaces in Lung Adenocarcinom
 
 ## Description
 This is a competition from [AI CUP 2022](https://tbrain.trendmicro.com.tw/Competitions/Details/22). The goal of this competition is to segment spread through air spaces (STAS) from a lung adenocarcinoma H&E image. We are TEAM1137.
