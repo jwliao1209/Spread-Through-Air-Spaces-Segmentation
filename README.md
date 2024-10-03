@@ -140,10 +140,10 @@ You may find the post process result in `prediciton/public-post` and `prediction
 
 ## Citation
 ```
-@misc{
+@misc{liao_stats_seg_2022,
     title  = {spread_through_air_spaces_segmentation},
-    author = {Kuok-Tong Ng, Jia-Wei Liao, Yi-Cheng Hung},
-    url    = {https://github.com/K-T-Ng/STAS_Final},
+    author = {Jia-Wei Liao, Kuok-Tong Ng, Yi-Cheng Hung},
+    url    = {https://github.com/jwliao1209/Spread-Through-Air-Spaces-Segmentation},
     year   = {2022}
 }
 ```
