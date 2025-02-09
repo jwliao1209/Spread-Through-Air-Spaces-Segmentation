@@ -31,10 +31,10 @@ class TTA_Transform(object):
         return self(data, direction='backward', **kwargs)
     
     def _forward(self, singleInput, **kwargs):
-        NotImplementedError
+        raise NotImplementedError
         
     def _backward(self, singleInput, **kwargs):
-        NotImplementedError
+        raise NotImplementedError
 
     def _parseVariables(self, **kwawrgs):
         return
