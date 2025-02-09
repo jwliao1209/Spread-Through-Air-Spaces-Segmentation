@@ -30,7 +30,7 @@ class BaseTransform(object):
         pass
 
     def _process(self, singleData, **kwargs):
-        NotImplementedError
+        raise NotImplementedError
 
     def _update_prob(self, cur_ep, total_ep):
         pass
